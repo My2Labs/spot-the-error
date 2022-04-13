@@ -22,12 +22,17 @@ PROGRAM print_fizz_buzz_numbers
         SET is_divisible_by_5 TO modulo5 IS 0
 
         IF is_divisible_by_3
-            ADD number TO fizz_buzz_numbers
+            ADD number TO fizz_numbers
+            PRINT fizz_numbers
         IF is_divisible_by_5
-            ADD number TO fizz_buzz_numbers
+            ADD number TO buzz_numbers
+            PRINT buzz_numbers
         IF is_divisible_by_3 AND is_divisible_by_5
             ADD number TO fizz_buzz_numbers
-        ADD number to fizz_buzz_numbers
+            PRINT fizz_buzz_numbers
+        ELSE 
+            PRINT INPUT
+        
 
         SET index TO index + 1
 ```
